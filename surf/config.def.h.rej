@@ -1,0 +1,9 @@
+@@ -6,6 +6,8 @@
+ static char *certdir        = "~/.surf/certificates/";
+ static char *cachedir       = "~/.surf/cache/";
+ static char *cookiefile     = "~/.surf/cookies.txt";
++static char *dldir          = "~/dl/";
++static char *dlstatus       = "~/.surf/dlstatus/";
+ 
+ /* Webkit default features */
+ /* Highest priority value will be used.
