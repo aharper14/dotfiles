@@ -1,0 +1,159 @@
+[  1306.126] 
+X.Org X Server 1.21.1.3
+X Protocol Version 11, Revision 0
+[  1306.127] Current Operating System: OpenBSD bsdvoid.my.domain 7.1 GENERIC.MP#3 amd64
+[  1306.127]  
+[  1306.128] Current version of pixman: 0.40.0
+[  1306.128] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  1306.128] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  1306.131] (==) Log file: "/home/liyah/.local/share/xorg/Xorg.0.log", Time: Fri Jul 29 15:22:58 2022
+[  1306.133] (==) Using system config directory "/usr/X11R6/share/X11/xorg.conf.d"
+[  1306.134] (==) No Layout section.  Using the first Screen section.
+[  1306.134] (==) No screen section available. Using defaults.
+[  1306.134] (**) |-->Screen "Default Screen Section" (0)
+[  1306.134] (**) |   |-->Monitor "<default monitor>"
+[  1306.134] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  1306.134] (==) Automatically adding devices
+[  1306.134] (==) Automatically enabling devices
+[  1306.134] (==) Not automatically adding GPU devices
+[  1306.134] (==) Automatically binding GPU devices
+[  1306.135] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  1306.135] (==) FontPath set to:
+	/usr/X11R6/lib/X11/fonts/misc/,
+	/usr/X11R6/lib/X11/fonts/TTF/,
+	/usr/X11R6/lib/X11/fonts/OTF/,
+	/usr/X11R6/lib/X11/fonts/Type1/,
+	/usr/X11R6/lib/X11/fonts/100dpi/,
+	/usr/X11R6/lib/X11/fonts/75dpi/
+[  1306.135] (==) ModulePath set to "/usr/X11R6/lib/modules"
+[  1306.135] (II) The server relies on wscons to provide the list of input devices.
+	If no devices become available, reconfigure wscons or disable AutoAddDevices.
+[  1306.135] (II) Loader magic: 0x1e8ef6d5c90
+[  1306.135] (II) Module ABI versions:
+[  1306.135] 	X.Org ANSI C Emulation: 0.4
+[  1306.135] 	X.Org Video Driver: 25.2
+[  1306.135] 	X.Org XInput driver : 24.4
+[  1306.135] 	X.Org Server Extension : 10.0
+[  1306.135] (--) Using wscons driver on /dev/ttyC4
+[  1306.141] (WW) checkDevMem: failed to open /dev/xf86 and /dev/mem
+	(Permission denied)
+	Check that you have set 'machdep.allowaperture=1'
+	in /etc/sysctl.conf and reboot your machine
+	refer to xf86(4) for details
+[  1306.141] 	linear framebuffer access unavailable
+[  1306.141] (II) LoadModule: "glx"
+[  1306.143] (II) Loading /usr/X11R6/lib/modules/extensions/libglx.so
+[  1306.152] (II) Module glx: vendor="X.Org Foundation"
+[  1306.152] 	compiled for 1.21.1.3, module version = 1.0.0
+[  1306.152] 	ABI class: X.Org Server Extension, version 10.0
+[  1306.152] (==) Matched wsfb as autoconfigured driver 0
+[  1306.152] (==) Assigned the driver to the xf86ConfigLayout
+[  1306.152] (II) LoadModule: "wsfb"
+[  1306.152] (II) Loading /usr/X11R6/lib/modules/drivers/wsfb_drv.so
+[  1306.153] (II) Module wsfb: vendor="X.Org Foundation"
+[  1306.153] 	compiled for 1.21.1.3, module version = 0.4.1
+[  1306.153] 	ABI class: X.Org Video Driver, version 25.2
+[  1306.153] (II) wsfb: driver for wsdisplay framebuffer: wsfb
+[  1306.153] (WW) Falling back to old probe method for wsfb
+[  1306.153] (II) wsfb(0): using default device
+[  1306.153] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  1306.153] (II) wsfb(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  1306.153] (==) wsfb(0): Depth 24, (--) framebuffer bpp 32
+[  1306.153] (==) wsfb(0): RGB weight 888
+[  1306.153] (==) wsfb(0): Default visual is TrueColor
+[  1306.153] (==) wsfb(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1306.153] (II) wsfb(0): Vidmem: 8100k
+[  1306.153] (==) wsfb(0): DPI set to (96, 96)
+[  1306.153] (**) wsfb(0): Using "Shadow Framebuffer"
+[  1306.153] (II) Loading sub module "shadow"
+[  1306.153] (II) LoadModule: "shadow"
+[  1306.154] (II) Loading /usr/X11R6/lib/modules/libshadow.so
+[  1306.155] (II) Module shadow: vendor="X.Org Foundation"
+[  1306.155] 	compiled for 1.21.1.3, module version = 1.1.0
+[  1306.155] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  1306.155] (II) Loading sub module "fb"
+[  1306.155] (II) LoadModule: "fb"
+[  1306.155] (II) Module "fb" already built-in
+[  1306.156] (==) wsfb(0): Backing store enabled
+[  1306.158] (II) Initializing extension Generic Event Extension
+[  1306.158] (II) Initializing extension SHAPE
+[  1306.158] (II) Initializing extension MIT-SHM
+[  1306.159] (II) Initializing extension XInputExtension
+[  1306.159] (II) Initializing extension XTEST
+[  1306.160] (II) Initializing extension BIG-REQUESTS
+[  1306.160] (II) Initializing extension SYNC
+[  1306.161] (II) Initializing extension XKEYBOARD
+[  1306.161] (II) Initializing extension XC-MISC
+[  1306.161] (II) Initializing extension SECURITY
+[  1306.162] (II) Initializing extension XFIXES
+[  1306.162] (II) Initializing extension RENDER
+[  1306.162] (II) Initializing extension RANDR
+[  1306.163] (II) Initializing extension COMPOSITE
+[  1306.164] (II) Initializing extension DAMAGE
+[  1306.164] (II) Initializing extension MIT-SCREEN-SAVER
+[  1306.164] (II) Initializing extension DOUBLE-BUFFER
+[  1306.165] (II) Initializing extension RECORD
+[  1306.165] (II) Initializing extension DPMS
+[  1306.165] (II) Initializing extension Present
+[  1306.165] (II) Initializing extension DRI3
+[  1306.165] (II) Initializing extension X-Resource
+[  1306.166] (II) Initializing extension XVideo
+[  1306.166] (II) Initializing extension XVideo-MotionCompensation
+[  1306.166] (II) Initializing extension GLX
+[  1306.167] (II) AIGLX: Screen 0 is not DRI2 capable
+[  1306.234] (II) IGLX: Loaded and initialized swrast
+[  1306.234] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  1306.234] (II) Initializing extension XFree86-VidModeExtension
+[  1306.234] (II) Initializing extension XFree86-DGA
+[  1306.234] (II) Initializing extension XFree86-DRI
+[  1306.234] (II) Initializing extension DRI2
+[  1306.294] (II) config/wscons: checking input device /dev/wskbd
+[  1306.294] (II) wskbd: using layout us
+[  1306.294] (II) LoadModule: "kbd"
+[  1306.294] (II) Loading /usr/X11R6/lib/modules/input/kbd_drv.so
+[  1306.295] (II) Module kbd: vendor="X.Org Foundation"
+[  1306.295] 	compiled for 1.21.1.3, module version = 1.9.0
+[  1306.295] 	Module class: X.Org XInput Driver
+[  1306.295] 	ABI class: X.Org XInput driver, version 24.4
+[  1306.295] (II) Using input driver 'kbd' for '/dev/wskbd'
+[  1306.295] (**) /dev/wskbd: always reports core events
+[  1306.295] (**) /dev/wskbd: always reports core events
+[  1306.295] (**) Option "Protocol" "standard"
+[  1306.295] (**) Option "XkbRules" "base"
+[  1306.295] (**) Option "XkbModel" "pc105"
+[  1306.295] (**) Option "XkbLayout" "us"
+[  1306.295] (II) XINPUT: Adding extended input device "/dev/wskbd" (type: KEYBOARD, id 6)
+[  1307.788] (II) config/wscons: checking input device /dev/wsmouse
+[  1307.788] (II) LoadModule: "ws"
+[  1307.790] (II) Loading /usr/X11R6/lib/modules/input/ws_drv.so
+[  1307.790] (II) Module ws: vendor="X.Org Foundation"
+[  1307.790] 	compiled for 1.21.1.3, module version = 1.3.0
+[  1307.790] 	Module class: X.Org XInput Driver
+[  1307.790] 	ABI class: X.Org XInput driver, version 24.4
+[  1307.790] (II) Using input driver 'ws' for '/dev/wsmouse'
+[  1307.790] (**) /dev/wsmouse: always reports core events
+[  1307.790] (II) ws: /dev/wsmouse: debuglevel 0
+[  1307.790] (**) Option "Device" "/dev/wsmouse"
+[  1307.790] (**) ws: /dev/wsmouse: ZAxisMapping: buttons 4 and 5
+[  1307.790] (**) ws: /dev/wsmouse: WAxisMapping: buttons 6 and 7
+[  1307.790] (**) ws: /dev/wsmouse: associated screen: 0
+[  1307.790] (II) ws: /dev/wsmouse: minimum x position: 0
+[  1307.790] (II) ws: /dev/wsmouse: maximum x position: 1919
+[  1307.790] (II) ws: /dev/wsmouse: minimum y position: 0
+[  1307.790] (II) ws: /dev/wsmouse: maximum y position: 1079
+[  1307.790] (==) ws: /dev/wsmouse: Buttons: 7
+[  1307.790] (**) ws: /dev/wsmouse: YAxisMapping: buttons 4 and 5
+[  1307.790] (II) XINPUT: Adding extended input device "/dev/wsmouse" (type: MOUSE, id 7)
+[  1307.790] (**) /dev/wsmouse: (accel) keeping acceleration scheme 1
+[  1307.790] (**) /dev/wsmouse: (accel) acceleration profile 0
+[  1307.790] (**) /dev/wsmouse: (accel) acceleration factor: 2.000
+[  1307.790] (**) /dev/wsmouse: (accel) acceleration threshold: 4
+[  1307.795] (EE) Failed to open authorization file "/home/liyah/.serverauth.5sEZc8UyTI": No such file or directory
+[  1319.401] (II) UnloadModule: "ws"
+[  1319.401] (II) UnloadModule: "kbd"
+[  1319.427] (II) Server terminated successfully (0). Closing log file.

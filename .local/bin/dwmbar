@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+#cpu() {
+#	read -r cpu a b c previdle rest < /proc/stat
+#	prevtotal=$((a+b+c+previdle))
+#	sleep 0.5
+#	read -r cpu a b c idle rest < /proc/stat
+#	total=$((a+b+c+idle))
+#	cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+#	echo -e "\x03[ $cpu%]"
+#}
+
+#ram() {
+#	mem=$(free -h | awk '/Mem:/ { print $3 }' | cut -f1 -d 'i')
+#	echo -e "\x02[ $mem]"
+#}
+
+clock() {
+	dte=$(date +"%a %b %d")
+	time=$(date +"%I:%M %p")
+
+	echo -e "[ $dte] [ $time]"
+}
+
+main() {
+	while true; do
+		xsetroot -name " $(clock) "
+		sleep 2
+	done
+}
+
+main
