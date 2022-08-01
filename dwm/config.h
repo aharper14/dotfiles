@@ -6,10 +6,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = 6;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 8;        /* vertical padding for statusbar */
-/* Default font will be Ubuntu if installed (ttf-ubuntu).
- * Otherwise, your default font will be Hack (ttf-hack)
- * JoyPixels (ttf-joypixels) is a dependency for colored fonts and emojis.
- */
+
 static const char *fonts[]     = {"JetBrains Mono:weight=bold:size=8:antialias=true:hinting=true",
                                   "Hack:size=8:antialias=true:autohint=true",
                                   "Iosevka for Powerline:size=10:antialias=true:autohint=true"
@@ -82,7 +79,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]   = { "dmenu_run","-W", "750", "-X", "600", "-h", "30", NULL };
+static const char *dmenucmd[]   = { "dmenu_run", "-h", "30", NULL };
 static const char *termcmd[]    = { "kitty", NULL };
 static const char *trayercmd[]  = { "trayer", "--edge", "top", "--align", "center", "--widthtype", "request", "--padding", "7", "--SetDockType", "true", "--SetPartialStrut", "false", "--expand", "true", "--monitor", "0", "--transparent", "true", "--alpha", "0", "--tint", "0x924441", "--height", "17", NULL };
 static const char *surfcmd[]	= { "tabbed","-c", "surf", "-e", NULL };
@@ -93,11 +90,11 @@ static Keychord keychords[] = {
 	{1, {{MODKEY|ShiftMask, XK_Return}}, spawn,           { .v = dmenucmd } },
 	{1, {{MODKEY, XK_Return}},			 spawn,           { .v = termcmd } },
 	{1, {{MODKEY|ShiftMask, XK_c}},		 killclient,      {0} },
-	{1, {{MODKEY, XK_n}},		         spawn,			  SHCMD("pcmanfm") },
+	{1, {{MODKEY, XK_n}},		         spawn,			  SHCMD("ranger") },
 	{1, {{MODKEY, XK_p}},				 spawn,			  SHCMD("scrot") },
 
     /* Web browsers */
-    {1, {{MODKEY, XK_b}},                 spawn,          {.v = surfcmd} },
+    {1, {{MODKEY, XK_b}},                 spawn,          SHCMD("firefox") },
 
 	/* System tray */
     {1, {{MODKEY, XK_semicolon}},           spawn,        {.v = trayercmd } },

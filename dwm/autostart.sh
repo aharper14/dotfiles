@@ -1,8 +1,8 @@
 #! /bin/bash
-#lxsession &
+lxsession &
 picom -b &
-dwmblocks &
-exec $HOME/.fehbg &
+/home/liyah/.fehbg &
+/home/liyah/.local/bin/dwmbar &
 #/usr/bin/emacs --daemon &
 ### Uncomment only ONE of the following ###
 # uncomment this line to restore last saved wallpaper...
